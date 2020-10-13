@@ -7,8 +7,10 @@
         <link href="" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="main.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
+        <link href="formStyles.css" rel="stylesheet">
         
 
         <style>
@@ -35,19 +37,127 @@
               <div class="inner">
                 <h3 class="masthead-brand">Landon Thys</h3>
                 <nav class="nav nav-masthead justify-content-center">
-                  <a class="nav-link active" href="#">Home</a>
-                  <a class="nav-link" href="#">Portfolio</a>
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link active" href="#" id="home-link">Home</a>
+                  <a class="nav-link" href="#" id="portfolio-link">Portfolio</a>
+                  <a class="nav-link" href="#" id="contact-link">Contact</a>
+                  
                 </nav>
               </div>
             </header>
           
-            <main role="main" class="inner cover text-center">
-              <h1 class="cover-heading">Developer</h1>
-              <p class="lead">Solution-oriented programmer with a wide variety of experience. Adept at motivating self and others. Passionate about learning and expanding knowledge.</p>
-              <p class="lead">
-                <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-              </p>
+            <main role="main" class="text-center">
+
+              <div id='main'class="page inner cover p-4">
+                <h1 class="cover-heading">Developer</h1>
+                <p class="lead">Solution-oriented programmer with a wide variety of experience. Adept at motivating self and others. Passionate about learning and expanding knowledge.</p>
+                <p class="lead">
+                  <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+                </p>
+              </div>
+
+              <div id="contact" class="page inner cover p-4" hidden="true">
+                <script type="text/javascript">var submitted=false;</script>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
+                onload="if(submitted) {window.location='index.html';}"></iframe>
+
+                <form class="form-signin" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdg69m57Nyw5NeyEOr32GGX6Yf_gAX5SRQcPa3DGs-VqwE9OQ/formResponse"  method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+                  <div class="text-center mb-4">
+                    <h1 class="h3 mb-3 font-weight-normal">Contact</h1>
+                    <p>Reach out to Landon Thys</p>
+                  </div>
+                
+                  <div class="form-label-group">
+                    <input type="text" id="name" name="entry.1857543228" class="form-control" placeholder="Name" required="">
+                    <label for="name">Name</label>
+                  </div>
+
+                  <div class="form-label-group">
+                    <input type="email" id="inputEmail" name="entry.1228237255" class="form-control" placeholder="Email address" required="" autofocus="">
+                    <label for="inputEmail">Email address</label>
+                  </div>
+
+                  <div class="form-label-group">
+                    <input type="text" id="message" name="entry.218761910" class="form-control" placeholder="Message" required="">
+                    <label for="message">Message</label>
+                  </div>
+                
+
+
+                  <button class="btn btn-lg btn-dark btn-block" type="submit">Send</button>
+                </form>
+              </div>
+
+              <div id="portfolio" class="page" hidden="true">
+                <h1>Porfolio</h1>
+
+                <div class="album py-5">
+
+                  <div class="card text-white bg-dark mb-3 ">
+                    <img class="card-img" src="images/Wilderness.png" alt="Card image">
+                    <div class="card-body">
+                      <h5 class="card-title">Adventures in Caledorn</h5>
+                      <p class="card-text">A 3rd person RPG developed in Unity using C#. Features randomly generated levels and weapons. Currently in pre-alpha and avaiable on Itch.io</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <a target="_blank" href="https://landonian22.itch.io/adventures-in-caledorn">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Learn More</button>
+                          </a>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card text-white bg-dark mb-3 ">
+                    <img class="card-img" src="images/title picture.png" alt="Card image">
+                    <div class="card-body">
+                      <h5 class="card-title">Melissa Lotholoz Website</h5>
+                      <p class="card-text">A personal advertisement site for Canadian winter olympic athlete Melissa Lotholz.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <a target="_blank" href="https://github.com/Landon-T/MelissaSite">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Learn More</button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card text-white bg-dark mb-3 ">
+                    <img class="card-img" src="images/DiscordBot.png" alt="Card image">
+                    <div class="card-body">
+                      <h5 class="card-title">Age of Empires 2: Definitive Edition Discord Bot</h5>
+                      <p class="card-text">A discord bot that will send random challenges with a command to allow players to participate in a community game called co-op challenges.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <a target="_blank" href="https://github.com/Landon-T/CoopChallengeDiscordBot">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Learn More</button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card text-white bg-dark mb-3 ">
+                    <img class="card-img" src="images/Destiny2.png" alt="Card image">
+                    <div class="card-body">
+                      <h5 class="card-title">Destiny 2 Stats Website</h5>
+                      <p class="card-text">A website that allows players to view their competitive statistics including a breakdown of performance on each map. The site integrates with Bungies API to get real time data. Built using vanilla Javascript and HTML. </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <a target="_blank" href="https://nervous-fermi-739b06.netlify.app/statspage?membershipId=4611686018475916084&characterId=2305843009351305188&platform=3&name=landonian22">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Learn More</button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                    
+                 
+                
+              </div>
+
             </main>
           
             <footer class="mastfoot mt-auto">
@@ -58,3 +168,5 @@
         </div>
     </body>
 </html>
+
+
