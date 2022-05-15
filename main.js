@@ -3,6 +3,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById("contact-link").addEventListener("click", activateContact);
     document.getElementById("home-link").addEventListener("click", activateHome);
     document.getElementById("portfolio-link").addEventListener("click", activatePortfolio);
+    document.getElementById("learn-more-link").addEventListener("click", activatePortfolio);
 
 
 });
